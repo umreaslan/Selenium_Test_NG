@@ -7,10 +7,12 @@ import utilities.Driver;
 
 public class FacebookPage {
     public FacebookPage(){
-
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+
+    @FindBy(xpath = "//button[@title='Only allow essential cookies']")
+    public WebElement cookiesKabulButonu;
 
     @FindBy(xpath = "//input[@placeholder='Email address or phone number']")
     public WebElement emailKutusu;

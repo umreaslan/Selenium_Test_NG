@@ -6,7 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class AmazonPage {
- /*
+
+/*
         Pages class'lari surekli kullandigimiz locate'leri
         tekrar tekrar locate etmek zorunda kalmaktan kurtulmak icin kullanilir
         Her pages class'i Driver class'inda olusturulan driver'i kullanir
@@ -32,9 +33,6 @@ public class AmazonPage {
 
     @FindBy(xpath = "//span[@id='productTitle']")
     public WebElement ilkUrunIsimElementi;
-
-
-
 
 }
 
