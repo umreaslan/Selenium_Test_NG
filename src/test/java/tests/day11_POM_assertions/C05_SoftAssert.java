@@ -1,7 +1,8 @@
 package tests.day11_POM_assertions;
 
-import org.junit.Test;
+
 import org.openqa.selenium.Keys;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.AmazonPage;
 import utilities.ConfigReader;

@@ -1,8 +1,9 @@
 package tests.day10_TestNGFremwork;
 
-import org.junit.Assert;
-import org.junit.Test;
+
 import org.openqa.selenium.Keys;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import pages.AmazonPage;
 import utilities.Driver;
 
@@ -47,7 +48,7 @@ public class C02_dependsOnMethods {
 
     }
 
-    @Test()
+    @Test
     public  void IlkUruntestii(){
 
 

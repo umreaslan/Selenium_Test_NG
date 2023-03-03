@@ -1,8 +1,8 @@
 package tests.day10_TestNGFremwork;
 
 import com.github.javafaker.Faker;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import pages.FacebookPage;
 import utilities.Driver;
 import utilities.ReusableMethods;

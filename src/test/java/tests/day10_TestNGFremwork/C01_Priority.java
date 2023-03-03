@@ -1,8 +1,9 @@
 package tests.day10_TestNGFremwork;
 
 import net.bytebuddy.build.Plugin;
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import utilities.Driver;
 
 public class C01_Priority {

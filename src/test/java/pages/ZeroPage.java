@@ -6,33 +6,32 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class ZeroPage {
+ public ZeroPage() {
+  PageFactory.initElements(Driver.getDriver(), this);
+ }
 
-   public ZeroPage(){
+ @FindBy(id = "signin_button")
+ public WebElement signInButonu;
 
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
+ @FindBy(id = "user_login")
+ public WebElement usernameKutusu;
 
-    @FindBy(id="signin_button")
-    public WebElement signInButonu;
+ @FindBy(id = "user_password")
+ public WebElement passwordKutusu;
 
-    @FindBy(id="user_login")
-    public WebElement usernameKutusu;
+ @FindBy(xpath = "//input[@value='Sign in']")
+ public WebElement signInSubmitButonu;
 
-    @FindBy(id="user_password")
-    public WebElement passwordKutusu;
+ @FindBy(xpath = "//strong[text()='Online Banking']")
+ public WebElement onlineBanking;
 
-    @FindBy(xpath = "//input[@value='Sign in']")
-    public WebElement signInSubmitButonu;
+ @FindBy(id = "pay_bills_link")
+ public WebElement payBillLinki;
 
-    @FindBy(xpath = "//strong[text()='Online Banking']")
-    public WebElement onlineBanking;
+ @FindBy(xpath = "//a[text()='Purchase Foreign Currency']")
+ public WebElement purchaseFCButonu;
 
-    @FindBy(id="pay_bills_link")
-    public WebElement payBillLinki;
-
-    @FindBy(xpath = "//a[text()='Purchase Foreign Currency']")
-    public WebElement purchaseFCButonu;
-
-    @FindBy(id="pc_currency")
-    public WebElement currencyDropdown;
+ @FindBy(id = "pc_currency")
+ public WebElement currencyDropdown;
 }
+

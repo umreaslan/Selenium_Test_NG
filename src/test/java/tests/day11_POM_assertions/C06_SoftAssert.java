@@ -1,8 +1,9 @@
 package tests.day11_POM_assertions;
 
-import org.junit.Test;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.ZeroPage;
 import utilities.ConfigReader;

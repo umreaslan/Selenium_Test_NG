@@ -11,7 +11,8 @@ public class QdPage {
   PageFactory.initElements(Driver.getDriver(),this);
  }
 
-
+@FindBy(linkText="Accept" )
+public  WebElement cookies;
  @FindBy(linkText = "Log in")
  public WebElement ilkLoginLinki;
 
@@ -21,13 +22,11 @@ public class QdPage {
  @FindBy(id="login-password")
  public WebElement passwordKutusu;
 
- @FindBy(linkText = "//a[.='Log in']")
+ @FindBy(xpath = "//button[text()='Login']")
  public WebElement loginButonu;
 
  @FindBy(xpath = "//a[text()='Instructor']")
  public WebElement basariliGirisElementi;
-
-
 
 
 }
